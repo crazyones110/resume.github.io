@@ -1,0 +1,314 @@
+// @media (min-width: 600px) {
+//   // mobile first
+//   p {
+//     font-size: 1.25rem;
+//   }
+
+// }
+
+// @media (max-width: 800px;) {
+//   // desktop first
+// }
+$green: rgb(51, 130, 129);
+$black: rgb(51, 51, 51);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-size: 16px;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 1652269 */
+  src: url('//at.alicdn.com/t/font_1652269_3t8ii69z1nc.eot');
+  src: url('//at.alicdn.com/t/font_1652269_3t8ii69z1nc.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1652269_3t8ii69z1nc.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1652269_3t8ii69z1nc.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1652269_3t8ii69z1nc.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1652269_3t8ii69z1nc.svg#iconfont') format('svg');
+}
+
+@mixin big-header-image($unicode) {
+  &::before {
+    content: $unicode;
+    // display: block;
+    font-family: 'iconfont';
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: $black;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+  }
+}
+
+@mixin small-header-image($unicode) {
+  &::before {
+    content: $unicode;
+    // display: block;
+    font-family: 'iconfont';
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    left: 5px;
+    top: -3px;
+    background-color: $green;
+  }
+}
+
+@mixin list-item-image($unicode) {
+  &::before {
+    position: absolute;
+    content: $unicode;
+    font-family: 'iconfont';
+    color: $black;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+  }
+}
+
+#page {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  background-color: $black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  .header-main {
+    text-align: center;
+    width: 200px;
+  }
+  aside {
+    margin-left: auto;
+    // flex: 1;
+    display: flex;
+    align-items: center;
+    .qrcode {
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+    }
+    a {
+      color: #ffffff;
+      &:hover {
+        color: rgb(230, 145, 145);
+      }
+    }
+    li {
+      display: flex;
+      align-items: center;
+      svg {
+        font-size: 1.2em;
+        margin-right: 5px;
+        margin: 3px 5px 0 10px;
+      }
+    }
+  }
+}
+
+.big-header {
+  position: relative;
+  padding-left: 20px;
+  font-weight: bold;
+  .header-wrapper {
+    border-left: 2px solid $black;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    .main-header {
+      font-size: 18px;
+    }
+    .vice-header {
+      font-size: 14px;
+      color: $green;
+    }
+  }
+  &.experience {
+    @include big-header-image('\e626');
+  }
+  &.information {
+    @include big-header-image('\e619');
+  }
+  &.skills {
+    @include big-header-image('\e851');
+  }
+  &.about-me {
+    @include big-header-image('\e6bb');
+  }
+  &.not-first {
+    margin-top: 27px;
+  }
+}
+
+.small-header {
+  position: relative;
+  padding-left: 20px;
+
+  &.project {
+    @include small-header-image('\e626');
+  }
+  &.front-end {
+    @include small-header-image('\e636');
+  }
+  &.back-end {
+    @include small-header-image('\e6f0');
+  }
+  &.education {
+    @include small-header-image('\e675');
+  }
+  &.thumb-up {
+    @include small-header-image('\e602');
+  }
+  &.note {
+    @include small-header-image('\e652');
+  }
+
+  .main-header {
+    border-radius: 5px;
+    padding-left: 25px;
+    // padding-bottom: 10px;
+    background-color: $black;
+    color: white;
+    height: 26px;
+    line-height: 26px;
+  }
+  .code-href {
+    position: absolute;
+    color: $black;
+    background-color: white;
+    display: block;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    top: 5px;
+    right: 5px;
+    padding: 0 5px;
+    a {
+      color: $black;
+    }
+    &:hover {
+      background-color: $black;
+      color: white;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.content {
+  padding-left: 20px;
+  // padding-top: 15px;
+  .detail-skills {
+    color: $green;
+    font-weight: bold;
+  }
+  .content-wrapper {
+    border-left: 2px solid $black;
+    padding-left: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .content-header {
+      font-weight: bold;
+    }
+    .content-main {
+      .item {
+        position: relative;
+        padding-left: 1.5rem;
+        font-weight: 540;
+        word-break: break-all;
+        // word-wrap: break-word;
+        @include list-item-image('\e8d5');
+        &.star {
+          @include list-item-image('\e603');
+        }
+        &.hat {
+          @include list-item-image('\e701');
+        }
+      }
+    }
+  }
+  &.last {
+    position: relative;
+    &::before {
+      content: '';
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      display: block;
+      background-color: $black;
+      border-radius: 50%;
+      bottom: -14px;
+      left: 14px;
+    }
+  }
+}
+
+
+main.left {
+  width: 50%;
+  min-height: calc(100vh - 151px);
+  padding: 20px 30px 30px 30px;
+}
+
+main.right {
+  width: 50%;
+  padding: 20px 30px 30px 0;
+}
+
+@media (max-width: 600px) {
+  #page {
+    width: 100vw;
+    overflow: hidden;
+  }
+  header {
+    .header-main {
+      width: 100%;
+    }
+    aside {
+      margin-top: 15px;
+    }
+  }
+  main.left {
+    width: 100%;
+    padding: 20px 30px 15px 15px;
+  }
+  main.right {
+    width: 100%;
+    padding: 20px 30px 15px 15px;
+  }
+}
