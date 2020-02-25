@@ -62,7 +62,7 @@ header aside {
 header aside .qrcode {
   width: 100px;
   height: 100px;
-  background-image: url("/qrcode.60b067b3.png");
+  background-image: url("../static/qrcode.png");
   background-size: cover;
 }
 header aside a {
