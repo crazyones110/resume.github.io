@@ -37,6 +37,7 @@ body {
   flex-wrap: wrap;
   max-width: 960px;
   margin: 0 auto;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 header {
@@ -61,7 +62,8 @@ header aside {
 header aside .qrcode {
   width: 100px;
   height: 100px;
-  border: 1px solid red;
+  background-image: url("/qrcode.60b067b3.png");
+  background-size: cover;
 }
 header aside a {
   color: #ffffff;
@@ -276,6 +278,9 @@ header aside li svg {
   top: 5px;
   right: 5px;
   padding: 0 5px;
+}
+.small-header .code-href.back-end {
+  right: 90px;
 }
 .small-header .code-href a {
   color: #333333;
