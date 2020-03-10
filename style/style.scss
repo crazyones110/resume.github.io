@@ -94,14 +94,14 @@ body {
     top: 2px;
   }
 }
-.mp-qrcode-wrapper {
-  display: flex;
-  align-items: flex-start;
-  #mp-todo {
-    max-width: 50%;
-  }
-}
 
+#mp-todo {
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%;
+  background-image: url('../static/mp-qrcode.jpg');
+  background-size: contain;
+}
 
 #page {
   display: flex;

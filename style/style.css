@@ -36,12 +36,16 @@ body {
   url('//at.alicdn.com/t/font_1652269_x0aadux3ksf.svg#iconfont') format('svg');
 }
 
-.mp-qrcode-wrapper {
+/* .mp-qrcode-wrapper {
   display: flex;
   align-items: flex-start;
-}
+} */
 #mp-todo {
-  max-width: 50%;
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%;
+  background-image: url('../static/mp-qrcode.jpg');
+  background-size: contain;
 }
 
 #page {
