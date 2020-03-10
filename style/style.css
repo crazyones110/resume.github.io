@@ -35,6 +35,15 @@ body {
   url('//at.alicdn.com/t/font_1652269_x0aadux3ksf.ttf') format('truetype'),
   url('//at.alicdn.com/t/font_1652269_x0aadux3ksf.svg#iconfont') format('svg');
 }
+
+.mp-qrcode-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+#mp-todo {
+  max-width: 50%;
+}
+
 #page {
   display: flex;
   flex-wrap: wrap;

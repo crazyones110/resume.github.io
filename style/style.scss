@@ -94,6 +94,14 @@ body {
     top: 2px;
   }
 }
+.mp-qrcode-wrapper {
+  display: flex;
+  align-items: flex-start;
+  #mp-todo {
+    max-width: 50%;
+  }
+}
+
 
 #page {
   display: flex;
