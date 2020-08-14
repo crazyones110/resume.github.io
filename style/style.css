@@ -1,23 +1,17 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-ul,
-ol {
+ul, ol {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
-
 body {
   font-size: 16px;
 }
-
 .icon {
   width: 1em;
   height: 1em;
@@ -25,21 +19,12 @@ body {
   fill: currentColor;
   overflow: hidden;
 }
-
 @font-face {
-  font-family: 'iconfont';  /* project id 1652269 */
-  src: url('//at.alicdn.com/t/font_1652269_37xc85zvi2v.eot');
-  src: url('//at.alicdn.com/t/font_1652269_37xc85zvi2v.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1652269_37xc85zvi2v.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1652269_37xc85zvi2v.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1652269_37xc85zvi2v.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1652269_37xc85zvi2v.svg#iconfont') format('svg');
+  font-family: 'iconfont';
+ /* project id 1652269 */
+  src: url('//at.alicdn.com/t/font_1652269_y8gahpcr63.eot');
+  src: url('//at.alicdn.com/t/font_1652269_y8gahpcr63.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_1652269_y8gahpcr63.woff2') format('woff2'), url('//at.alicdn.com/t/font_1652269_y8gahpcr63.woff') format('woff'), url('//at.alicdn.com/t/font_1652269_y8gahpcr63.ttf') format('truetype'), url('//at.alicdn.com/t/font_1652269_y8gahpcr63.svg#iconfont') format('svg');
 }
-
-/* .mp-qrcode-wrapper {
-  display: flex;
-  align-items: flex-start;
-} */
 #mp-todo {
   width: 50%;
   height: 0;
@@ -48,10 +33,9 @@ body {
   background-size: contain;
 }
 .background-code {
-  background-color:#fff5f5;
+  background-color: #fff5f5;
   color: #ff502c;
 }
-
 #page {
   display: flex;
   flex-wrap: wrap;
@@ -59,10 +43,9 @@ body {
   margin: 0 auto;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
 header {
   width: 100%;
-  background-color: #333333;
+  background-color: #333;
   padding: 20px;
   color: white;
   display: flex;
@@ -82,11 +65,11 @@ header aside {
 header aside .qrcode {
   width: 100px;
   height: 100px;
-  background-image: url("../static/qrcode.png");
+  background-image: url('../static/qrcode.png');
   background-size: cover;
 }
 header aside a {
-  color: #ffffff;
+  color: #fff;
 }
 header aside a:hover {
   color: #e69191;
@@ -100,14 +83,13 @@ header aside li svg {
   margin-right: 5px;
   margin: 3px 5px 0 10px;
 }
-
 .big-header {
   position: relative;
   padding-left: 20px;
   font-weight: bold;
 }
 .big-header .header-wrapper {
-  border-left: 2px solid #333333;
+  border-left: 2px solid #333;
   padding-left: 25px;
   padding-bottom: 10px;
 }
@@ -119,15 +101,15 @@ header aside li svg {
   color: #338281;
 }
 .big-header.experience::before {
-  content: "";
-  font-family: "iconfont";
+  content: '\e626';
+  font-family: 'iconfont';
   width: 40px;
   height: 40px;
   display: flex;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  background-color: #333333;
+  background-color: #333;
   color: white;
   position: absolute;
   left: 0;
@@ -135,15 +117,15 @@ header aside li svg {
   font-size: 20px;
 }
 .big-header.information::before {
-  content: "";
-  font-family: "iconfont";
+  content: '\e619';
+  font-family: 'iconfont';
   width: 40px;
   height: 40px;
   display: flex;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  background-color: #333333;
+  background-color: #333;
   color: white;
   position: absolute;
   left: 0;
@@ -151,15 +133,15 @@ header aside li svg {
   font-size: 20px;
 }
 .big-header.skills::before {
-  content: "";
-  font-family: "iconfont";
+  content: '\e851';
+  font-family: 'iconfont';
   width: 40px;
   height: 40px;
   display: flex;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  background-color: #333333;
+  background-color: #333;
   color: white;
   position: absolute;
   left: 0;
@@ -167,15 +149,15 @@ header aside li svg {
   font-size: 20px;
 }
 .big-header.about-me::before {
-  content: "";
-  font-family: "iconfont";
+  content: '\e6bb';
+  font-family: 'iconfont';
   width: 40px;
   height: 40px;
   display: flex;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  background-color: #333333;
+  background-color: #333;
   color: white;
   position: absolute;
   left: 0;
@@ -185,14 +167,28 @@ header aside li svg {
 .big-header.not-first {
   margin-top: 27px;
 }
-
 .small-header {
   position: relative;
   padding-left: 20px;
 }
+.small-header.intern::before {
+  content: '\e644';
+  font-family: 'iconfont';
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  left: 5px;
+  top: -3px;
+  background-color: #338281;
+}
 .small-header.project::before {
-  content: "";
-  font-family: "iconfont";
+  content: '\e626';
+  font-family: 'iconfont';
   width: 30px;
   height: 30px;
   display: flex;
@@ -206,8 +202,8 @@ header aside li svg {
   background-color: #338281;
 }
 .small-header.front-end::before {
-  content: "";
-  font-family: "iconfont";
+  content: '\e636';
+  font-family: 'iconfont';
   width: 30px;
   height: 30px;
   display: flex;
@@ -221,8 +217,8 @@ header aside li svg {
   background-color: #338281;
 }
 .small-header.back-end::before {
-  content: "";
-  font-family: "iconfont";
+  content: '\e6f0';
+  font-family: 'iconfont';
   width: 30px;
   height: 30px;
   display: flex;
@@ -236,8 +232,8 @@ header aside li svg {
   background-color: #338281;
 }
 .small-header.education::before {
-  content: "";
-  font-family: "iconfont";
+  content: '\e675';
+  font-family: 'iconfont';
   width: 30px;
   height: 30px;
   display: flex;
@@ -251,8 +247,8 @@ header aside li svg {
   background-color: #338281;
 }
 .small-header.thumb-up::before {
-  content: "";
-  font-family: "iconfont";
+  content: '\e602';
+  font-family: 'iconfont';
   width: 30px;
   height: 30px;
   display: flex;
@@ -266,8 +262,8 @@ header aside li svg {
   background-color: #338281;
 }
 .small-header.note::before {
-  content: "";
-  font-family: "iconfont";
+  content: '\e652';
+  font-family: 'iconfont';
   width: 30px;
   height: 30px;
   display: flex;
@@ -281,8 +277,8 @@ header aside li svg {
   background-color: #338281;
 }
 .small-header.blog::before {
-  content: "";
-  font-family: "iconfont";
+  content: '\e60c';
+  font-family: 'iconfont';
   width: 30px;
   height: 30px;
   display: flex;
@@ -296,8 +292,8 @@ header aside li svg {
   background-color: #338281;
 }
 .small-header.certificate::before {
-  content: "\e679";
-  font-family: "iconfont";
+  content: '\e679';
+  font-family: 'iconfont';
   width: 30px;
   height: 30px;
   display: flex;
@@ -313,14 +309,14 @@ header aside li svg {
 .small-header .main-header {
   border-radius: 5px;
   padding-left: 25px;
-  background-color: #333333;
+  background-color: #333;
   color: white;
   height: 26px;
   line-height: 26px;
 }
 .small-header .code-href {
   position: absolute;
-  color: #333333;
+  color: #333;
   background-color: white;
   display: block;
   font-size: 0.8rem;
@@ -333,16 +329,15 @@ header aside li svg {
   right: 90px;
 }
 .small-header .code-href a {
-  color: #333333;
+  color: #333;
 }
 .small-header .code-href:hover {
-  background-color: #333333;
+  background-color: #333;
   color: white;
 }
 .small-header .code-href:hover a {
   color: white;
 }
-
 .content {
   padding-left: 20px;
 }
@@ -351,7 +346,7 @@ header aside li svg {
   font-weight: bold;
 }
 .content .content-wrapper {
-  border-left: 2px solid #333333;
+  border-left: 2px solid #333;
   padding-left: 23px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -367,45 +362,54 @@ header aside li svg {
 }
 .content .content-wrapper .content-main .item::before {
   position: absolute;
-  content: "";
-  font-family: "iconfont";
-  color: #333333;
+  content: '\e8d5';
+  font-family: 'iconfont';
+  color: #333;
   position: absolute;
   left: 0px;
   top: 2px;
 }
 .content .content-wrapper .content-main .item.star::before {
   position: absolute;
-  content: "";
-  font-family: "iconfont";
-  color: #333333;
+  content: '\e603';
+  font-family: 'iconfont';
+  color: #333;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+}
+.content .content-wrapper .content-main .item.bytedance::before {
+  position: absolute;
+  content: '\e6e1';
+  font-family: 'iconfont';
+  color: #333;
   position: absolute;
   left: 0px;
   top: 2px;
 }
 .content .content-wrapper .content-main .item.hat::before {
   position: absolute;
-  content: "";
-  font-family: "iconfont";
-  color: #333333;
+  content: '\e701';
+  font-family: 'iconfont';
+  color: #333;
   position: absolute;
   left: 0px;
   top: 2px;
 }
 .content .content-wrapper .content-main .item.blog::before {
   position: absolute;
-  content: "";
-  font-family: "iconfont";
-  color: #333333;
+  content: '\e60d';
+  font-family: 'iconfont';
+  color: #333;
   position: absolute;
   left: 0px;
   top: 2px;
 }
 .content .content-wrapper .content-main .item.merit::before {
   position: absolute;
-  content: "\e69f";
-  font-family: "iconfont";
-  color: #333333;
+  content: '\e69f';
+  font-family: 'iconfont';
+  color: #333;
   position: absolute;
   left: 0px;
   top: 2px;
@@ -414,50 +418,42 @@ header aside li svg {
   position: relative;
 }
 .content.last::before {
-  content: "";
+  content: '';
   width: 14px;
   height: 14px;
   position: absolute;
   display: block;
-  background-color: #333333;
+  background-color: #333;
   border-radius: 50%;
   bottom: -14px;
   left: 14px;
 }
-
 main.left {
   width: 50%;
   min-height: calc(100vh - 151px);
   padding: 20px 30px 30px 30px;
 }
-
 main.right {
   width: 50%;
   padding: 20px 30px 30px 0;
 }
-
 @media (max-width: 600px) {
   #page {
     width: 100vw;
     overflow: hidden;
-  }
-
+ }
   header .header-main {
     width: 100%;
-  }
+ }
   header aside {
     margin-top: 15px;
-  }
-
+ }
   main.left {
     width: 100%;
     padding: 20px 30px 15px 15px;
-  }
-
+ }
   main.right {
     width: 100%;
     padding: 20px 30px 15px 15px;
-  }
+ }
 }
-
-/*# sourceMappingURL=/style.e0c02e61.css.map */
